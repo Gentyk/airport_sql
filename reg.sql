@@ -37,6 +37,7 @@ begin
 	end into flag1
 	from dual;
 
+
 	--если рейса не существует, то предупрежение с ошибкой
 	if flag1='N' then
 		DBMS_OUTPUT.PUT_LINE('error:there is not such flight');
